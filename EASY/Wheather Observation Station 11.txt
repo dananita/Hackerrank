@@ -1,0 +1,2 @@
+Oracle solution:
+SELECT DISTINCT CITY FROM STATION WHERE not REGEXP_LIKE (lower(city),'^[aeiou].*[aeiou]$');

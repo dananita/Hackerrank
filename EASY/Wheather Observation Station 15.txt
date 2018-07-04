@@ -1,0 +1,7 @@
+ORACLE solution:
+SELECT ROUND((LONG_W),4) FROM STATION
+WHERE LAT_N=(select MAX(LAT_N) from station where LAT_N<=137.2345);
+
+MYSQL solution:
+SELECT ROUND((LONG_W),4) FROM STATION
+WHERE LAT_N=(select MAX(LAT_N) from station where LAT_N<=137.2345)

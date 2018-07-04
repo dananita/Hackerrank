@@ -1,0 +1,8 @@
+
+mysql solution:
+SELECT DISTINCT CITY FROM STATION 
+WHERE CIty RLIKE '^[^aeiou]' AND CITY RLIKE '[^aeiou]$'
+
+oracle solution:
+SELECT DISTINCT CITY FROM STATION 
+WHERE regexp_like(city,'^[^aeiouAEIOU].*[^aeiouAEIOU]$');
